@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FAFAFA;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cms.arasu.controllers.LandingController">
+   <top>
+      <JFXToolbar prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: #03A9F4;" BorderPane.alignment="CENTER">
+         <right>
+            <JFXButton fx:id="buttonLogout" buttonType="RAISED" onAction="#logOutAction" text="LogOut" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+         </right>
+         <center>
+            <Label fx:id="userName" text="Label" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </center>
+         <left>
+            <JFXHamburger fx:id="navMenu" alignment="CENTER" maxHeight="50.0" maxWidth="50.0" onMouseClicked="#navMenuClicked" BorderPane.alignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </JFXHamburger>
+         </left>
+         <padding>
+            <Insets right="15.0" />
+         </padding>
+      </JFXToolbar>
+   </top>
+   <left>
+      <JFXDrawer fx:id="navigationDrawer" prefHeight="238.0" prefWidth="163.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
