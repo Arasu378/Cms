@@ -63,7 +63,7 @@ public class LandingController implements Initializable {
 //        navMenu.addEventHandler(MouseEvent.MOUSE_PRESSED, (EventHandler<T>) event -> {
 //            hamburgerBackArrowBasicTransition.setRate(hamburgerBackArrowBasicTransition.getRate() * -1);
 //            hamburgerBackArrowBasicTransition.play();
-//            if (navigationDrawer.isShown()) {
+//            if (navigationDrawer.isShown()) {0
 //                navigationDrawer.close();
 //            } else {
 //                navigationDrawer.open();

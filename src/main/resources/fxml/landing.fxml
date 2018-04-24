@@ -2,11 +2,13 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXDrawer?>
-<?import com.jfoenix.controls.JFXHamburger?>
 <?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FAFAFA;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cms.arasu.controllers.LandingController">
@@ -29,22 +31,29 @@
                </font>
             </Label>
          </center>
-         <left>
-            <JFXHamburger fx:id="navMenu" alignment="CENTER" maxHeight="50.0" maxWidth="50.0" onMouseClicked="#navMenuClicked" BorderPane.alignment="CENTER">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <padding>
-                  <Insets left="15.0" />
-               </padding>
-            </JFXHamburger>
-         </left>
          <padding>
             <Insets right="15.0" />
          </padding>
       </JFXToolbar>
    </top>
    <left>
-      <JFXDrawer fx:id="navigationDrawer" prefHeight="238.0" prefWidth="163.0" BorderPane.alignment="CENTER" />
+      <JFXDrawer fx:id="navigationDrawer" prefHeight="238.0" prefWidth="163.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="345.0" prefWidth="278.0" style="-fx-background-color: #40C4FF;">
+               <children>
+                  <Pane prefHeight="349.0" prefWidth="163.0">
+                     <children>
+                        <JFXButton layoutX="37.0" layoutY="27.0" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #01579B;" text="Add Course" textAlignment="CENTER" textFill="#fcf9f9">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding></JFXButton>
+                        <JFXButton layoutX="33.0" layoutY="72.0" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #01579B;" text="Add Student" textAlignment="CENTER" textFill="#fcf9f9" />
+                        <JFXButton layoutX="33.0" layoutY="113.0" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #01579B;" text="My Profile" textAlignment="CENTER" textFill="#fcf9f9" />
+                        <MaterialIconView fill="#fffefe" layoutX="37.0" layoutY="44.0" textAlignment="CENTER" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children></JFXDrawer>
    </left>
 </BorderPane>
